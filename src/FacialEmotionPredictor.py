@@ -21,7 +21,7 @@ class FacialEmotionPredictor(object):
                       optimizer='adam',
                       metrics=['accuracy'])
 
-    def predict(image):
+    def predict(self, image):
         '''
         Params:
         image - np array dim (1, 192, 192)

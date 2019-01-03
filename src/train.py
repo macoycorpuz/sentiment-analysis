@@ -14,9 +14,13 @@ import json
 from keras import backend as K
 K.set_image_dim_ordering('th')
 
-with open('../experiments/models/model_7.json') as f:
+# with open('../experiments/models/model_7.json') as f:
+#     model = model_from_json(f.read())
+# model.load_weights('../experiments/weights/weights_7.h5')
+
+with open('../experiments/models/model_5.json') as f:
     model = model_from_json(f.read())
-model.load_weights('../experiments/weights/weights_7.h5')
+model.load_weights('../experiments/weights/weights_5.h5')
 
 X_train_fname = '../data/X_train_192.npy'
 Y_train_fname = '../data/Y_train_192.npy'
